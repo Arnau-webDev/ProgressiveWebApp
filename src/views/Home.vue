@@ -1,15 +1,16 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <Icons/>
+  </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import Table from "@/components/Table.vue";
+import Icons from "@/components/Icons.vue";
 
 export default {
   name: "home",
   components: {
-    Table
+    Icons
   }
 };
 </script>
