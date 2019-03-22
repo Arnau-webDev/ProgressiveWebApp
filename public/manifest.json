@@ -1,6 +1,6 @@
 {
-  "name": "my_pwa",
-  "short_name": "my_pwa",
+  "name": "NYSL Pwa",
+  "short_name": "NYSL",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
