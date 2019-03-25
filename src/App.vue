@@ -3,17 +3,21 @@
     <div id="nav">
       <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>|
-      <router-link to="/schedule">Schedule</router-link>
+      <router-link to="/schedule/all">Schedule</router-link>
     </div>
     <router-view/>
+    <!-- <Icons/>  -->
   </div>
 </template>
 
 <script>
-// import home from "./views/Home.vue";
+// import Icons from "./components/Icons.vue";
 
 export default {
-  name: "app"
+  name: "app",
+  components: {
+    // Icons
+  }
 };
 </script>
 

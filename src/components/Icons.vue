@@ -1,9 +1,11 @@
 <template>
   <div class="container">
     <div>
-      <i class="fas fa-home"></i>
-      <i class="fas fa-user-friends"></i>
-      <router-link to="/schedule">
+      <i class="fas fa-map-marker-alt"></i>
+      <router-link to="/teams">
+        <i class="fas fa-user-friends"></i>
+      </router-link>
+      <router-link to="/schedule/all">
         <i class="far fa-calendar-alt"></i>
       </router-link>
     </div>

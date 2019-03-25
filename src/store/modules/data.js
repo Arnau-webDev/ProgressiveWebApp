@@ -124,11 +124,13 @@ const state = {
                 timeline: "1:00 a.m."
             }
         ]
-    }
+    },
+    teams: ["U1", "U2", "U3", "U4", "U5", "U6"]
 }
 
 const getters = {
-    allData: (state) => state.data
+    allData: (state) => state.data,
+    arrayOfTeams: (state) => state.teams
 };
 
 const actions = {

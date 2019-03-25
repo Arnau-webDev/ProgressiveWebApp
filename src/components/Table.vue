@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>{{name}}</h1>
     <table>
       <thead>
         <tr>
@@ -10,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-bind:key="index" v-for="(element, index) in allData.september">
+        <tr v-bind:key="index" v-for="(element, index) in getDataSeptember">
           <td>{{element.date}}</td>
           <td>{{element.team1}} and {{element.team2}}</td>
           <td>{{element.location}}</td>
@@ -29,7 +30,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-bind:key="index" v-for="(element, index) in allData.october">
+        <tr v-bind:key="index" v-for="(element, index) in getDataOctober">
           <td>{{element.date}}</td>
           <td>{{element.team1}} and {{element.team2}}</td>
           <td>{{element.location}}</td>
@@ -41,12 +42,35 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: "Table",
-  methods: {},
-  computed: mapGetters(["allData"])
+  props: ["name"],
+  methods: {
+    ...mapActions(["callChangeData"])
+  },
+  computed: {
+    ...mapGetters(["allData"]),
+    getDataSeptember() {
+      if (this.name !== "all") {
+        return this.$store.getters.allData.september.filter(
+          match => match.team1 == this.name || match.team2 == this.name
+        );
+      } else {
+        return this.$store.getters.allData.september;
+      }
+    },
+    getDataOctober() {
+      if (this.name !== "all") {
+        return this.$store.getters.allData.october.filter(
+          match => match.team1 == this.name || match.team2 == this.name
+        );
+      } else {
+        return this.$store.getters.allData.october;
+      }
+    }
+  }
 };
 </script>
 
