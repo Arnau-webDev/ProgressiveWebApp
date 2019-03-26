@@ -1,20 +1,19 @@
 <template>
   <div class="container">
-    <div v-bind:key="index" v-for="(team, index) in arrayOfTeams">
-      <router-link class="router" :to="`/schedule/${team}`">
-        <p>{{team}}</p>
-      </router-link>
+    <!-- <h1>Click to see map location</h1> -->
+    <div v-bind:key="index" v-for="(element, index) in locationsData">
+      <p>
+        <a :href="element.location">{{element.name}}</a>
+      </p>
     </div>
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
-
 export default {
-  name: "listOfTeams",
-  methods: {},
-  computed: mapGetters(["arrayOfTeams"])
+  name: "location",
+  computed: mapGetters(["locationsData"])
 };
 </script>
 
@@ -26,10 +25,6 @@ export default {
   align-items: center;
 }
 
-.router {
-  background: red;
-}
-
 .container div {
   background: lightgreen;
   border: 1px solid green;
@@ -37,8 +32,16 @@ export default {
   margin-top: 1.6rem;
 }
 
-.container div > * {
+.container p {
+  margin: 0;
+}
+
+.container div p a {
   text-decoration: none;
   color: inherit;
+  display: block;
+  padding: 1rem;
 }
 </style>
+
+

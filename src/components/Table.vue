@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{name}}</h1>
+    <h1>{{name}} Matches</h1>
     <table>
       <thead>
         <tr>
@@ -79,6 +79,11 @@ export default {
 div {
   text-align: center;
 }
+
+h1 {
+  text-transform: capitalize;
+}
+
 table {
   margin-top: 2rem;
   width: 100%;

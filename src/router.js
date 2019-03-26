@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Location from './views/Location.vue'
 import Schedule from './views/Schedule.vue'
 import Teams from './views/Teams.vue'
 
@@ -19,12 +19,12 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/location',
+      name: 'location',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: About
+      component: Location
     },
     {
       path: '/schedule/:name',

@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <div>
-      <i class="fas fa-map-marker-alt"></i>
+      <router-link to="/location">
+        <i class="fas fa-map-marker-alt"></i>
+      </router-link>
       <router-link to="/teams">
         <i class="fas fa-user-friends"></i>
       </router-link>
