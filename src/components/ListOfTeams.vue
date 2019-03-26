@@ -1,9 +1,7 @@
 <template>
   <div class="container">
     <div v-bind:key="index" v-for="(team, index) in arrayOfTeams">
-      <router-link class="router" :to="`/schedule/${team}`">
-        <p>{{team}}</p>
-      </router-link>
+      <router-link :to="`/schedule/${team}`">{{team}}</router-link>
     </div>
   </div>
 </template>
@@ -26,19 +24,18 @@ export default {
   align-items: center;
 }
 
-.router {
-  background: red;
-}
-
 .container div {
   background: lightgreen;
   border: 1px solid green;
+  border-radius: 10px;
   min-width: 200px;
   margin-top: 1.6rem;
 }
 
-.container div > * {
+.container div > a {
   text-decoration: none;
   color: inherit;
+  display: block;
+  padding: 20px 0;
 }
 </style>

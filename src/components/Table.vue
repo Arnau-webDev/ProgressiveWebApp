@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>{{name}} Matches</h1>
     <table>
       <thead>
@@ -76,7 +76,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-div {
+.container {
   text-align: center;
 }
 
@@ -85,8 +85,8 @@ h1 {
 }
 
 table {
-  margin-top: 2rem;
-  width: 100%;
+  margin: 1rem auto;
+  width: 95%;
   text-align: center;
   font-size: 0.9rem;
 }

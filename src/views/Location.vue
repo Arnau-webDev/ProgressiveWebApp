@@ -28,6 +28,7 @@ export default {
 .container div {
   background: lightgreen;
   border: 1px solid green;
+  border-radius: 10px;
   min-width: 200px;
   margin-top: 1.6rem;
 }
@@ -40,7 +41,7 @@ export default {
   text-decoration: none;
   color: inherit;
   display: block;
-  padding: 1rem;
+  padding: 20px 0;
 }
 </style>
 
