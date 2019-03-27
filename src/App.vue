@@ -7,13 +7,10 @@
       <router-link to="/schedule/all">Schedule</router-link>
     </div>
     <router-view/>
-    <!-- <Icons/>  -->
   </div>
 </template>
 
 <script>
-// import Icons from "./components/Icons.vue";
-
 export default {
   name: "app",
   components: {
@@ -35,8 +32,12 @@ export default {
 body {
   padding: 0;
   margin: 0;
-  background: rgb(182, 252, 219);
-  /* background: url("./assets/soccer.jpg"); */
+  /* background: rgb(182, 252, 219); */
+  background-image: url("./assets/soccer.jpg");
+  /* background-color: lightgreen; */
+  background-color: burlywood;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
 }
 
 #nav,
@@ -51,5 +52,11 @@ body {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+@media only screen and (min-width: 1040px) {
+  body {
+    background-size: cover;
+  }
 }
 </style>

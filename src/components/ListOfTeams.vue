@@ -25,8 +25,9 @@ export default {
 }
 
 .container div {
-  background: lightgreen;
-  border: 1px solid green;
+  /* background: rgba(32, 99, 35, 0.5); */
+  background: rgba(36, 36, 36, 0.5);
+  border: 1px solid #fff;
   border-radius: 10px;
   min-width: 200px;
   margin-top: 1.6rem;
@@ -34,7 +35,7 @@ export default {
 
 .container div > a {
   text-decoration: none;
-  color: inherit;
+  color: #fff;
   display: block;
   padding: 20px 0;
 }

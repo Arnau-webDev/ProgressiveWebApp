@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <h1>{{name}} Matches</h1>
+    <!-- <h1>{{name}} Matches</h1> -->
     <table>
       <thead>
         <tr>
-          <th>SEPTEMBER</th>
+          <th>September</th>
           <th>Teams</th>
           <th>Location</th>
           <th>Times</th>
@@ -23,7 +23,7 @@
     <table>
       <thead>
         <tr>
-          <th>OCTOBER</th>
+          <th>October</th>
           <th>Teams</th>
           <th>Location</th>
           <th>Times</th>
@@ -80,14 +80,30 @@ export default {
   text-align: center;
 }
 
-h1 {
-  text-transform: capitalize;
-}
-
 table {
   margin: 1rem auto;
+  background: rgba(36, 36, 36, 0.5);
+  border: 1px solid #fff;
+  border-radius: 5px;
   width: 95%;
   text-align: center;
   font-size: 0.9rem;
+  color: #fff;
+}
+
+table td,
+table th {
+  padding: 5px 0;
+  width: 21.6667%;
+}
+
+table tbody tr td:nth-child(3) {
+  width: 35%;
+}
+
+@media only screen and (max-width: 356px) {
+  table {
+    font-size: 0.7rem;
+  }
 }
 </style>
