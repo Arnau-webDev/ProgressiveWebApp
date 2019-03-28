@@ -78,6 +78,7 @@ export default {
 <style scoped>
 .container {
   text-align: center;
+  padding: 0 1rem;
 }
 
 table {
