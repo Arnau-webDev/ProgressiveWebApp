@@ -24,6 +24,7 @@ export default {};
   height: 90vh;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .container div {

@@ -1,7 +1,7 @@
 <template>
   <v-app id="app">
     <v-content>
-      <Navbar />
+      <Navbar/>
       <router-view/>
     </v-content>
   </v-app>
@@ -27,6 +27,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   background: transparent;
+  padding: 0;
 }
 
 body {

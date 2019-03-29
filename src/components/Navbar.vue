@@ -49,10 +49,6 @@ export default {
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
 .v-navigation-drawer {
   opacity: 0.9;
 }
