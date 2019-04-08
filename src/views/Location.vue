@@ -3,7 +3,7 @@
     <!-- <h1>Click to see map location</h1> -->
     <div v-bind:key="index" v-for="(element, index) in locationsData">
       <p>
-        <a :href="element.location">{{element.name}}</a>
+        <a :href="element.location" target="_blank">{{element.name}}</a>
       </p>
     </div>
   </div>
